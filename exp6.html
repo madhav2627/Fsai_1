@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Experiment 6</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+<h1>Experiment 6</h1>
+</header>
+
+<div class="container">
+
+<section>
+<h2>Aim</h2>
+<p>Create Dynamic Dashboard using Chart.js</p>
+</section>
+
+<section>
+<h2>Theory</h2>
+<p>
+Modern AI web applications combine machine learning models with web frameworks.
+Flask is commonly used as a lightweight backend to serve machine learning predictions.
+Frontend applications communicate with the backend using HTTP requests.
+</p>
+</section>
+
+<section>
+<h2>Software Requirements</h2>
+<ul>
+<li>Python 3.10+</li>
+<li>Flask</li>
+<li>MongoDB / scikit-learn / JS libraries</li>
+<li>VS Code</li>
+<li>Browser</li>
+</ul>
+</section>
+
+<section>
+<h2>Procedure</h2>
+<pre>
+1. Create a project directory.
+2. Create a Python virtual environment.
+3. Install required packages.
+4. Write the Flask application code.
+5. Run the Flask server.
+6. Test the program in the browser or Postman.
+</pre>
+</section>
+
+<section>
+<h2>Example Code</h2>
+<pre>
+from flask import Flask, request, jsonify
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "AI Lab Experiment Running"
+
+@app.route("/predict", methods=["POST"])
+def predict():
+    data = request.json
+    numbers = data["numbers"]
+    result = sum(numbers)
+    return jsonify({"result": result})
+
+if __name__ == "__main__":
+    app.run(debug=True)
+</pre>
+</section>
+
+<section>
+<h2>How to Run</h2>
+<pre>
+python -m venv venv
+venv\Scripts\activate
+pip install flask pymongo scikit-learn numpy pandas
+python app.py
+</pre>
+</section>
+
+</div>
+</body>
+</html>

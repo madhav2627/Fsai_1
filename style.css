@@ -1,0 +1,11 @@
+
+body{font-family:Arial;background:#f5f7fb;margin:0}
+header{background:#111827;color:white;padding:20px;text-align:center}
+.container{padding:40px;max-width:1100px;margin:auto}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:white;padding:20px;border-radius:10px;text-decoration:none;color:#111;
+box-shadow:0 6px 12px rgba(0,0,0,0.08);transition:.25s}
+.card:hover{transform:translateY(-6px);background:#2563eb;color:white}
+section{margin-bottom:30px}
+pre{background:#0f172a;color:#e5e7eb;padding:15px;border-radius:8px;overflow:auto}
+h2{border-bottom:2px solid #e5e7eb;padding-bottom:5px}
